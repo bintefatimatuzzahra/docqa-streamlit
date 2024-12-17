@@ -24,20 +24,8 @@ GoogleVertex_API_KEY = os.getenv("GOOGLE_VERTEX_API_KEY")
 if not COHERE_API_KEY or not GoogleVertex_API_KEY:
     raise ValueError("API Key(s) are not set in environment variables.")
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = type
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = project_id
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = private_key_id
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = private_key
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = client_email
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = client_id
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = auth_uri
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = token_uri
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = auth_provider_x509_cert_url
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = client_x509_cert_url
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = universe_domain
 
-
-#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "mymlproject-444721-140c4261cfb8.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "mymlproject-444721-140c4261cfb8.json"
 
 # Token estimation function
 def estimate_tokens(text):
