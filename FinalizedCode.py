@@ -25,7 +25,8 @@ if not COHERE_API_KEY or not GoogleVertex_API_KEY:
     raise ValueError("API Key(s) are not set in environment variables.")
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "mymlproject-444721-140c4261cfb8.json"
-
+os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+genai.configure(api_key=os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
 
 # Token estimation function
 def estimate_tokens(text):
