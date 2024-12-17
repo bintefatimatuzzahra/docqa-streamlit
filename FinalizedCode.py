@@ -305,8 +305,8 @@ def main():
     )
 
     # FAISS index and metadata paths (hidden)
-    faiss_index_path = "/content/drive/MyDrive/bintefatimatuzzahra28/ML_Project/faiss_metadata/faiss_index.index"
-    metadata_path = "/content/drive/MyDrive/bintefatimatuzzahra28/ML_Project/faiss_metadata/metadata.json"
+    faiss_index_path = "/faiss_metadata/faiss_index.index"
+    metadata_path = "/faiss_metadata/metadata.json"
 
     # Initialize Vertex AI model
     model = ChatVertexAI(model="gemini-1.5-flash", project_id="mymlproject-444721")
