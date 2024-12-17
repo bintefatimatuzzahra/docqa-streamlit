@@ -1,0 +1,16 @@
+faiss-cpu
+langchain
+openai
+unstructured
+unstructured[local-inference]
+tiktoken
+langchain-community
+langchain-openai
+numpy
+langchain-google-vertexai
+langchain-cohere==0.3.3
+langchain-experimental==0.3.3
+langchain-openai==0.2.12
+langchain-core
+streamlit
+pyngrok
