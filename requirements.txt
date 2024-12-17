@@ -14,3 +14,5 @@ langchain-openai==0.2.12
 langchain-core
 streamlit
 pyngrok
+google-cloud-aiplatform
+
