@@ -26,14 +26,7 @@ if not COHERE_API_KEY or not GoogleVertex_API_KEY:
 
 
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "mymlproject-444721-140c4261cfb8.json"
-#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "docqa-streamlit/mymlproject-444721-140c4261cfb8.json"
-
-# Write credentials to a temporary file
-credentials_path = "google_credentials.json"
-with open(credentials_path, "w") as f:
-    json.dump(st.secrets["GOOGLE_APPLICATION_CREDENTIALS"], f)
-
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "https://github.com/bintefatimatuzzahra/docqa-streamlit/blob/main/mymlproject-444721-140c4261cfb8.json"
 
 
 # Token estimation function
