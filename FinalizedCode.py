@@ -27,14 +27,15 @@ if not COHERE_API_KEY or not GoogleVertex_API_KEY:
 
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "mymlproject-444721-140c4261cfb8.json"
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "docqa-streamlit/mymlproject-444721-140c4261cfb8.json"
-credentials_path = "docqa-streamlit/mymlproject-444721-140c4261cfb8.json"
+
+# Write credentials to a temporary file
+credentials_path = "google_credentials.json"
+with open(credentials_path, "w") as f:
+    json.dump(st.secrets["GOOGLE_APPLICATION_CREDENTIALS"], f)
+
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
 
-# Verify file existence
-if not os.path.exists(credentials_path):
-    raise FileNotFoundError(f"Credentials file not found at: {credentials_path}")
-else:
-    print("Google credentials file loaded successfully.")
+
 # Token estimation function
 def estimate_tokens(text):
     words = text.split()
