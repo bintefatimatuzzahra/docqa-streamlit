@@ -24,11 +24,6 @@ GoogleVertex_API_KEY = os.getenv("GOOGLE_VERTEX_API_KEY")
 if not COHERE_API_KEY or not GoogleVertex_API_KEY:
     raise ValueError("API Key(s) are not set in environment variables.")
 
-faiss_index_dir = "/faiss_metadata"
-# Create the directory if it doesn't exist
-if not os.path.exists(faiss_index_dir):
-    os.makedirs(faiss_index_dir)
-
 # Token estimation function
 def estimate_tokens(text):
     words = text.split()
@@ -310,8 +305,8 @@ def main():
     )
 
     # FAISS index and metadata paths (hidden)
-    faiss_index_path = "/faiss_metadata/faiss_index.index"
-    metadata_path = "/faiss_metadata/metadata.json"
+    faiss_index_path = "faiss_index.index"
+    metadata_path = "metadata.json"
 
     # Initialize Vertex AI model
     model = ChatVertexAI(model="gemini-1.5-flash", project_id="mymlproject-444721")
