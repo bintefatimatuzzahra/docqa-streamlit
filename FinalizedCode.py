@@ -26,7 +26,7 @@ if not COHERE_API_KEY or not GoogleVertex_API_KEY:
 
 
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "mymlproject-444721-140c4261cfb8.json"
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "https://github.com/bintefatimatuzzahra/docqa-streamlit/blob/main/mymlproject-444721-140c4261cfb8.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "https://github.com/bintefatimatuzzahra/docqa-streamlit/tough-transport-444608-a6-e38e2daf0ce2.json"
 
 
 # Token estimation function
