@@ -26,7 +26,7 @@ if not COHERE_API_KEY or not GoogleVertex_API_KEY:
 
 
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "mymlproject-444721-140c4261cfb8.json"
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "https://github.com/bintefatimatuzzahra/docqa-streamlit/tough-transport-444608-a6-e38e2daf0ce2.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "tough-transport-444608-a6-e38e2daf0ce2.json"
 
 
 # Token estimation function
@@ -314,7 +314,7 @@ def main():
     metadata_path = "metadata.json"
 
     # Initialize Vertex AI model
-    model = ChatVertexAI(model="gemini-1.5-flash", project_id="mymlproject-444721")
+    model = ChatVertexAI(model="gemini-1.5-flash", project_id="tough-transport-444608-a6")
 
     # Check if FAISS index exists and load or create
     if os.path.exists(faiss_index_path) and os.path.exists(metadata_path):
